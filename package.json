@@ -1,0 +1,35 @@
+{
+  "name": "gsc-eventos-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicativo desktop para gerenciamento local de eventos da GSC.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "br.unicamp.gsc.eventos",
+    "productName": "GSC Eventos",
+    "files": [
+      "main.cjs",
+      "desktop.html",
+      "app.js",
+      "style.css"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.3.0",
+    "electron-builder": "^26.18.0"
+  },
+  "overrides": {
+    "minimatch@>=7": "^11.0.1"
+  }
+}

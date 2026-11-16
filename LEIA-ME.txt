@@ -1,0 +1,37 @@
+GSC EVENTOS | PROTOTIPO V3 - INTERFACE HUMANIZADA E RESPONSIVA
+
+VERSAO DESKTOP (ELECTRON)
+
+1. Instale o Node.js LTS.
+2. Na pasta do projeto, execute: npm install
+3. Para abrir o aplicativo: npm start
+4. Para gerar o instalador do Windows: npm run dist
+5. No aplicativo, entre como organizador usando um e-mail ficticio terminado em @unicamp.br ou @cotil.unicamp.br. No painel "Organizacao", use "Nova atividade" para cadastrar, editar ou excluir atividades.
+6. Os eventos e inscricoes ficam salvos localmente no perfil do Electron deste computador. Esta versao nao sincroniza dados com outros dispositivos nem deve ser usada para dados sensiveis.
+
+1. Extraia o ZIP e abra index.html no Google Chrome ou Microsoft Edge.
+2. Escolha mobile.html, web.html ou desktop.html. Os tres usam a mesma demonstracao.
+3. Ao entrar, escolha:
+   A) AREA UNICAMP - GRATUITA: digite um nome, um email terminado em @unicamp.br ou @cotil.unicamp.br, uma senha FICTICIA e selecione aluno ou organizador.
+   B) AREA EXTERNA - ORGANIZADOR: cadastre o nome da escola e do responsavel, email e senha FICTICIA. O painel mostrara uma contratacao PENDENTE. Clique em "Simular pagamento e ativar escola" para liberar o acesso, SEM COBRANCA. Copie o codigo de convite gerado.
+   C) AREA EXTERNA - ALUNO: saia da conta do organizador, entre em "Sou aluno convidado" e informe o codigo fornecido pela escola, nome, email e uma senha FICTICIA. O aluno acessa sem pagar.
+4. A navegacao inclui programacao, inscricoes demonstrativas, vitrine, certificados e painel de organizador (quando autorizado).
+
+ATENCAO - LIMITACOES:
+- Este prototipo NAO e seguro para uso real. Verifica apenas o formato do email Unicamp, sem confirmar sua identidade.
+- As senhas nao sao armazenadas nem verificadas: qualquer texto serve na demonstracao. NUNCA digite senha real.
+- Nao ha pagamento real, preco definido, cartao, PIX, checkout ou integracao bancaria.
+- A simulacao de contratacao e liberada pelo proprio organizador (para demonstracao).
+- As contas, escolas, convites e inscricoes ficam salvos APENAS no navegador local; outros computadores nao compartilham os dados.
+- Para producao: backend, banco de dados, login institucional via SSO/OAuth, autenticacao de usuarios externos, permissoes verificadas no servidor, provedor de pagamento com webhook, cadastro de escolas e regras de licenca.
+- As datas, atividades e vagas sao ilustrativas.
+
+
+MELHORIAS DA V3:
+- Textos acolhedores e identidade visual unificada em todos os arquivos HTML.
+- Layout fluido no celular, tablet e computador; menu inferior no celular e menu lateral no desktop.
+- Telas de acesso, atividades, vitrine, inscricoes e organizacao adaptadas a telas pequenas.
+- Tabela de organizacao vira uma lista de cartoes no celular.
+- Navegacao e formularios com tamanhos de toque adequados e melhor acessibilidade.
+- O arquivo mobile.html ainda mostra um preview com largura de celular ao abrir no computador.
+- Teste local e visual nao transformam a simulacao de login ou pagamento em servicos reais.
